@@ -4,7 +4,7 @@ let timelineElements = [
         title: "Software Engineer Intern",
         location: "San Jose, CA",
         description:
-          "Automated provisioning crucial AWS infrastructures using the latest AMIs, providing a solution that could potentially save over $100,000 from security vulnerabilities.",
+          "Automated provisioning crucial AWS infrastructures using the latest AMIs, providing an invaluable solution that could potentially save over $100,000 from security vulnerabilities.",
         buttonText: "View Presentation",
         date: "June 2022 - August 2022",
         icon: "work",
@@ -15,7 +15,7 @@ let timelineElements = [
       title: "Mobile App Developer Intern",
       location: "Santa Barbara, CA",
       description:
-        "Created, from scratch, a mobile IOS app in Flutter that tracks your habits and includes mindfulness activities.  This app is now being used to collect data for research at META Lab!",
+        "Created, from scratch, a mobile IOS app in Flutter that tracks your habits and practices mindfulness.  This app is right now being used at the forefront of groundbreaking research being conducted at META Lab.",
       buttonText: "View App",
       date: "August 2021 - June 2022",
       icon: "work",

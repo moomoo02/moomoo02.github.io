@@ -46,6 +46,7 @@ function Exp() {
                       isWorkIcon ? "workButton" : "schoolButton"
                     }`}
                     href={element.link}
+                    target="_blank"
                   >
                     {element.buttonText}
                   </a>

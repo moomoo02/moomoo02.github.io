@@ -20,7 +20,7 @@ function App() {
 
     let loadedModel;
     const glftLoader = new GLTFLoader();
-    glftLoader.load('./assets/shiba/scene.gltf', (gltfScene) => {
+    glftLoader.load('../shiba/scene.gltf', (gltfScene) => {
       loadedModel = gltfScene;
       console.log(loadedModel);
 

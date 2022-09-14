@@ -45,7 +45,7 @@ function Exp() {
                     className={`button ${
                       isWorkIcon ? "workButton" : "schoolButton"
                     }`}
-                    href="/"
+                    href={element.link}
                   >
                     {element.buttonText}
                   </a>

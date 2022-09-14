@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import Stats from 'three/examples/jsm/libs/stats.module';
+// import Stats from 'three/examples/jsm/libs/stats.module';
 
 export default class SceneInit {
   constructor(canvasId) {
@@ -17,7 +17,7 @@ export default class SceneInit {
 
     // NOTE: Additional components.
     this.clock = undefined;
-    this.stats = undefined;
+    // this.stats = undefined;
     this.controls = undefined;
 
     // NOTE: Lighting is basically required.
@@ -38,18 +38,18 @@ export default class SceneInit {
     // NOTE: Specify a canvas which is already created in the HTML.
     const canvas = document.getElementById(this.canvasId);
     this.renderer = new THREE.WebGLRenderer({
-      canvas,
+      canvas, 
       // NOTE: Anti-aliasing smooths out the edges.
       antialias: true,
     });
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.renderer.setSize(window.innerWidth/2, window.innerHeight/2);
     // this.renderer.shadowMap.enabled = true;
     document.body.appendChild(this.renderer.domElement);
 
     this.clock = new THREE.Clock();
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-    this.stats = Stats();
-    document.body.appendChild(this.stats.dom);
+    // this.stats = Stats();
+    // document.body.appendChild(this.stats.dom);
 
     // ambient light which is for the whole scene
     this.ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
@@ -82,7 +82,7 @@ export default class SceneInit {
     // requestAnimationFrame(this.animate.bind(this));
     window.requestAnimationFrame(this.animate.bind(this));
     this.render();
-    this.stats.update();
+    // this.stats.update();
     this.controls.update();
   }
 
@@ -95,6 +95,6 @@ export default class SceneInit {
   onWindowResize() {
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.renderer.setSize(window.innerWidth/2, window.innerHeight/2);
   }
 }

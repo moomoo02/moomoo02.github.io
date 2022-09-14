@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import Exp from './Exp'
 
 import SceneInit from './lib/SceneInit';
 
@@ -24,9 +25,9 @@ function App() {
       loadedModel = gltfScene;
       console.log(loadedModel);
 
-      // gltfScene.scene.rotation.y = Math.PI / 8;
-      // gltfScene.scene.position.y = 3;
-      // gltfScene.scene.scale.set(10, 10, 10);
+      gltfScene.scene.rotation.y = Math.PI / 8;
+      gltfScene.scene.position.y = 3;
+      gltfScene.scene.scale.set(10, 10, 10);
       test.scene.add(gltfScene.scene);
     });
 
@@ -42,9 +43,12 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <div>Vince Nguyen</div>
-      <canvas id="myThreeJsCanvas" />
+    <div class="xl container mx-auto">
+      <div class="text-6xl">Vince Nguyen</div>
+      <Exp/>
+      {/* <canvas/> */}
+      <canvas style={{right: 1000}} id="myThreeJsCanvas" />
+  
       {/* <p>hi</p> */}
     </div>
   );

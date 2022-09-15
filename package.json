@@ -1,5 +1,6 @@
 {
-  "name": "vite-project",
+  "homepage" : "https://moomoo2202.github.io/",
+  "name": "moomoo02-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",

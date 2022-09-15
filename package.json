@@ -1,7 +1,7 @@
 {
   "homepage" : "https://moomoo2202.github.io/",
   "name": "moomoo02-website",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

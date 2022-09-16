@@ -6,6 +6,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import "react-vertical-timeline-component/style.min.css";
 
 import "./Exp.css"
+import './index.css'
 
 function Exp() {
     let workIconStyles = { background: "#06D6A0" };

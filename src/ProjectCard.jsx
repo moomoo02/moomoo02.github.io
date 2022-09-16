@@ -19,7 +19,9 @@ function CardItem(props) {
             <p className="cards__item__text" style={{whiteSpace: 'pre-wrap'}}>{props.text}</p>
           </div>
         </div>
+        
       </li>
+      
     </>
   );
 }

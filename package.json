@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://moomoo2202.github.io/",
+  "homepage": "https://moomoo2202.github.io/",
   "name": "moomoo02-website",
   "private": false,
   "version": "0.0.0",
@@ -11,8 +11,10 @@
     "svgr": "svgr -d src/Icons/ assets/"
   },
   "dependencies": {
+    "@mui/material": "^5.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.0",
     "react-vertical-timeline-component": "^3.5.2",
     "three": "^0.144.0"
   },

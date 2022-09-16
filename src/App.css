@@ -5,6 +5,18 @@
   text-align: center;
 }
 
+.title {
+  font-size: 12em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  padding-bottom: 100px;
+}
+
+.canvas {
+  position: relative;
+  display: inline
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

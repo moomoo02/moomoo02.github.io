@@ -1,7 +1,6 @@
 import React from "react";
 import "./Projects.css";
 import ProjectCard from "./ProjectCard";
-import './index.css'
 
 function Cards() {
 /*
@@ -33,7 +32,7 @@ function Cards() {
           <ul className="cards__items">    
             <ProjectCard
               src="images/wordship.jpg"
-              text="Connects a Wordle react app with a manic shooter game in Godot using websockets. (We won a speaker but it never came T-T)"
+              text="Connects a Wordle clone to a manic shooter game. (We won a speaker but it never came T-T)"
               title="Wordship"
               link="https://devpost.com/software/wordship"
             />

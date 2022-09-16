@@ -6,11 +6,13 @@ function CardItem(props) {
       <li className="cards__item">
         <div className="cards__item__link">
           <figure className="cards__item__pic-wrap" data-category={props.label}>
-            <img
+            <a href={props.link} target="_blank">
+              <img
               className="cards__item__img"
               alt="Travel Image"
               src={props.src}
-            />
+              />
+            </a>
           </figure>
           <div className="cards__item__info">
             <h1>{props.title}</h1>

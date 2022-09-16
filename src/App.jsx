@@ -1,34 +1,35 @@
 import { useState, useEffect } from 'react'
 import * as THREE from 'three'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import Exp from './Exp'
+import Projects from './Projects'
 
-import SceneInit from './lib/SceneInit';
+import SceneInit from './lib/SceneInit'
 
 import './App.css'
 
 function App() {
   useEffect(() => {
-    const test = new SceneInit('myThreeJsCanvas');
-    test.initialize();
-    test.animate();
+    // const test = new SceneInit('myThreeJsCanvas');
+    // test.initialize();
+    // test.animate();
 
-    // const boxGeometry = new THREE.BoxGeometry(8, 8, 8);
-    // const boxMaterial = new THREE.MeshNormalMaterial();
-    // const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
-    // test.scene.add(boxMesh);
+    // // const boxGeometry = new THREE.BoxGeometry(8, 8, 8);
+    // // const boxMaterial = new THREE.MeshNormalMaterial();
+    // // const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
+    // // test.scene.add(boxMesh);
 
-    let loadedModel;
-    const glftLoader = new GLTFLoader();
-    glftLoader.load('/models/shiba/scene.gltf', (gltfScene) => {
-      loadedModel = gltfScene;
-      console.log(loadedModel);
+    // let loadedModel;
+    // const glftLoader = new GLTFLoader();
+    // glftLoader.load('/models/shiba/scene.gltf', (gltfScene) => {
+    //   loadedModel = gltfScene;
+    //   console.log(loadedModel);
 
-      gltfScene.scene.rotation.y = Math.PI / 8;
-      gltfScene.scene.position.y = 3;
-      gltfScene.scene.scale.set(10, 10, 10);
-      test.scene.add(gltfScene.scene);
-    });
+    //   gltfScene.scene.rotation.y = Math.PI / 8;
+    //   gltfScene.scene.position.y = 3;
+    //   gltfScene.scene.scale.set(10, 10, 10);
+    //   test.scene.add(gltfScene.scene);
+    // });
 
     // const animate = () => {
     //   if (loadedModel) {
@@ -46,8 +47,8 @@ function App() {
       <div class="text-6xl">Vince Nguyen</div>
       <Exp/>
       {/* <canvas/> */}
-      <canvas style={{right: 1000}} id="myThreeJsCanvas" />
-  
+      {/* <canvas style={{right: 1000}} id="myThreeJsCanvas" /> */}
+      <Projects/>
       {/* <p>hi</p> */}
     </div>
   );

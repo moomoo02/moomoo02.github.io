@@ -32,15 +32,15 @@ function App() {
       test.scene.add(gltfScene.scene);
     });
 
-    // const animate = () => {
-    //   if (loadedModel) {
-    //     loadedModel.scene.rotation.x += 0.01;
-    //     loadedModel.scene.rotation.y += 0.01;
-    //     loadedModel.scene.rotation.z += 0.01;
-    //   }
-    //   requestAnimationFrame(animate);
-    // };
-    // animate();
+    const animate = () => {
+      if (loadedModel) {
+        loadedModel.scene.rotation.x += 0.01;
+        loadedModel.scene.rotation.y += 0.01;
+        loadedModel.scene.rotation.z += 0.01;
+      }
+      requestAnimationFrame(animate);
+    };
+    animate();
   }, []);
 
   return (
@@ -51,7 +51,7 @@ function App() {
       <Projects/>
       {/* <canvas class="bg-white" /> */}
       
-      <h1 class="pt-20 pb-20">Meet my friend !!!</h1>
+      <h1 class="pt-20 pb-20">Meet my friend !!! (Sorry idk what he is doing)</h1>
       <canvas class="flex items-center justify-center h-screen" className="canvas" id="myThreeJsCanvas" />
       {/* <Footer style={{width: "{{window.innerWidth}}"}}/> */}
       {/* <p>hi</p> */}

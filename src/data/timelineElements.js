@@ -21,7 +21,7 @@ let timelineElements = [
       date: "August 2021 - June 2022",
       icon: "work",
       link: "https://apps.apple.com/app/curiosity-application/id1620492635?platform=iphone",
-      img: "images/UCSB.png"
+      img: "images/UCSB2.png"
     }
   ];
   

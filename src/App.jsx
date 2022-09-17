@@ -5,6 +5,7 @@ import Exp from './Exp'
 import Projects from './Projects'
 import Footer from './Footer'
 import SceneInit from './lib/SceneInit'
+import Socials from './Socials'
 
 import './App.css'
 
@@ -44,16 +45,19 @@ function App() {
 
   return (
     <div class="xl container mx-auto">
-      <h1 className="title">Vince Nguyen</h1>
+      <div className="title">Vince Nguyen</div>
       <Exp/>
       {/* <canvas/> */}
       <Projects/>
       {/* <canvas class="bg-white" /> */}
       
-      <h1 class="pt-20 pb-20">Meet my friend !</h1>
+      <h1 class="pt-20 pb-20">Meet my friend !!!</h1>
       <canvas class="flex items-center justify-center h-screen" className="canvas" id="myThreeJsCanvas" />
       {/* <Footer style={{width: "{{window.innerWidth}}"}}/> */}
       {/* <p>hi</p> */}
+     <h1 class="pt-20 pb-10">Now lets be friends :)</h1>
+      <Socials/>
+      <h3>Created by Vince Nguyen 2022</h3>
     </div>
     
   );
